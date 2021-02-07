@@ -1,16 +1,37 @@
+* {
+  box-sizing: unset;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result {
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 150px;
+  background: whitesmoke;
+  border: 2px solid grey;
+}
+
 .loader {
   border: 16px solid lightgrey;
   border-top: 16px solid blue;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  animation: spin 5s linear infinite;
+  width: 70px;
+  height: 70px;
+  animation: spin 3s linear infinite;
   float: right;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
+  10% {
+    transform: rotate(10deg);
   }
   100% {
     transform: rotate(360deg);
